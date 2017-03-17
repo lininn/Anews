@@ -1,0 +1,211 @@
+/*投资者关系*/
+.rea_con{
+width: 1200px;
+margin: 0 auto;	
+position: relative;
+margin-bottom: 20px;
+top: -30px;
+overflow: hidden;
+}
+.re_navbar{
+	width: 1200px;
+	height: 60px;
+	background: #f5f5f5;
+	box-shadow: 5px 0px 20px #d4d4d4,-5px 0px 20px #d4d4d4;
+border-radius: 8px;
+}
+
+.re_cen{
+	width: 1100px;
+	height: 22px;
+
+	position: absolute;
+	left: 50px;
+	overflow: hidden;
+	top: 20px;
+}
+.re_cen ul{
+	width: 1755px;
+	position: absolute;
+}
+.re_cen ul li{
+	float: left;
+	width: 156px;
+	height: 23px;
+	line-height: 22px;
+	text-align: center;
+	border-left: 1px solid #e6735e;
+	
+}
+.re_cen ul li:first-child{
+	border-left: none;
+}
+
+
+.re_cen ul li a{
+	font-size: 18px;
+	font-family: "微软雅黑";
+color: #000;
+}
+
+.re_cen ul li a:hover{
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color:#E5674E;
+	display: inline-block;
+	height: 20px;
+	border-bottom: 3px solid #E5674E;
+}
+
+
+.con_le{
+	cursor: pointer;
+	position: absolute;
+	display:block;
+	left: 15px;
+	top: 22px;
+	height: 20px;
+	width: 20px;
+	background: url(../../img/usRelation/reti_l1.png) no-repeat center center;
+}
+.con_ri{
+position: absolute;
+	display:block;
+	right: 15px;
+	top: 22px;
+	height: 20px;
+	width: 20px;
+	background: url(../../img/usRelation/reti_l2.png) no-repeat center center;	
+cursor: pointer;
+}
+
+#gong{
+	
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color:#E5674E;
+	display: inline-block;
+	height: 20px;
+	border-bottom: 3px solid #E5674E;
+}
+#bar_bg{
+	height: 40px;
+	width: 700px;
+	position: absolute;
+	left: 250px;
+	top: 60px;
+}
+/*rela article*/
+.rela_arti{
+	width: 1200px;
+	
+	position: relative;
+	margin-top: 20px;
+	margin:0 auto;
+}
+.sele{
+	width: 120px;
+	height: 35px;
+	position: absolute;
+	left: 50px;
+	top:-10px;
+	background: #ededed;
+	text-align: center;
+	line-height: 35px;
+}
+.sele>div{
+	height: 35px;
+	width: 88px;
+	position: absolute;
+	left: 0;
+}
+.sele span{
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	height: 35px;
+	width: 33px;
+	background: url(../../img/usRelation/re_list1.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+.sele>div p{
+	width: 88px;
+	height: 35px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	
+}
+.sele>div ul{
+	position: absolute;
+	top: 35px;
+	width: 85px;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	display: none;
+	z-index: 999;
+}
+.sele>div ul li{
+	height: 35px;
+	width: 85px;
+	font-size: 13px;
+	border-bottom: 1px solid #BFBFBF;
+	cursor: pointer;
+	background: #FFFFFF;
+}
+.sele>div ul li:last-child{
+	border-bottom: none;
+}
+.sele>div ul li:hover{
+	background: #ededed;
+}
+
+/*biaoge内容*/
+.re_table{
+	width: 1096px;
+	position: relative;
+	left: 50px;
+	
+	top: 35px;
+	font-family: "微软雅黑";
+font-size: 15px;
+padding-bottom: 76px;
+
+}
+.re_table dd{
+	border-bottom: 1px solid #e0e0e0;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.re_table p{
+	display: inline-block;
+margin-left: 25px;
+
+}
+.re_table span{
+	display: inline-block;
+float: right;
+
+
+}
+
+
+#btn_mor{
+	position: relative;
+	cursor: pointer;
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #FFFFFF;
+	background: #E5674E;
+	line-height:40px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	border-radius: 10px;
+	z-index: 99999;
+}
+

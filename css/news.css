@@ -10,14 +10,14 @@ text-decoration: none;
 }
 /*header*/
 .bod_con{
-height: 80px;
+height: 90px;
 width: 100%;
 background: #fff;
 }
 .n_header{
 width: 1200px;
 margin: 0 auto;
-height: 80px;
+height: 90px;
 position:relative;
 
 }
@@ -25,12 +25,12 @@ position:relative;
 position: absolute;
 
 left: 0;
-top: 0;
+top: 28px;
 }
 .ne_nav{
-height: 80px;
+height: 50px;
 position: absolute;
-
+top: 41px;
 left: 370px;
 
 }
@@ -41,7 +41,7 @@ padding-right: 10px;
 margin-left: 35px;
 
 
-line-height: 80px;
+line-height:50px;
 cursor: pointer;
 }
 .ne_nav li a{
@@ -49,23 +49,27 @@ color: #000;
 font-family: "微软雅黑";
 
 }
+.ne_nav li a:hover{
+	color: #E5674E;
+	
+}
 #a1{
 background: url(../img/nav_txtbg.png) no-repeat center bottom;
-background-size: 100% 10%;
+background-size: 100% 10px;
 }
 #a1 a{
 color: #e6735e;
 }
 .ne_nav li:hover{
 background: url(../img/nav_txtbg.png) no-repeat center bottom;
-background-size: 100% 10%;
+background-size: 100% 10px;
 
 }
 .search{
 position: absolute;
 right: 0;
-top: 50%;
-margin-top: -13px;
+top:50px;
+
 }
 
 /*news center*/

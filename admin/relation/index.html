@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	<script src="dealphp/tools/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dealphp/tools/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="Atop">
+			<form id="reg" action="dealphp/aboutUs/gonggao.php" enctype="multipart/form-data" method="post">
+				
+				<ol class="errorz"></ol>
+				
+					
+					<p><label>标题</label><input type="text" name="atitle" placeholder="请输入标题(限制20个字符)" id="" value="" /><p>
+					
+					<p><label>描述：</label><textarea name="ades" rows="10" cols="20" placeholder="描述信息"></textarea><br><p>
+					<p><label>文件：</label><input type="file" name="apdf" id="Apdf" value="文件上传" /><br><p>
+							<input type="text" name="atime" style="display: none;" id="atime" value="" /><br>
+					<p><label></label><input type="submit" value="提交"/><p>
+					
+					
+			
+
+		
+				
+				
+			
+				
+				
+			</form>
+		</div>
+		<script type="text/javascript">
+			function theTime(){
+				this.shijian=new Date();
+				var nowtime=this.shijian.getFullYear();
+				return nowtime;
+			}
+			$("#atime").val(theTime());
+			$('#reg').validate({
+				errorLabelContainer:'ol.errorz',
+				wrapper:'li',
+				rules:{
+					atitle:{
+					required:true,
+					maxlength:10
+					},
+					ades:{
+						required:true,
+						minlength:5,
+					},
+					atime:{
+					
+					},
+					apdf:{
+						required:true
+					}
+					
+				},
+				messages: {
+					
+						atitle:{
+							required:'标题不得为空！',
+							maxlength:'标题不得大于{0}位！'
+						},
+						ades:{
+							required:'描述不得为空！',
+							minlength:'描述不得小于{0}位！'
+						},
+						apdf:{
+							required:'文件不得为空！',
+						}
+					
+				}
+			
+					})
+
+		</script>
+	</body>
+</html>

@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<metna charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		<!DOCTYPE html>
-<html>
-	<head>
 		<meta charset="UTF-8">
 		<title>news</title>
 		<link rel="stylesheet" type="text/css" href="../../css/aboutUs/gloab.css"/>
 		<link rel="stylesheet" type="text/css" href="../../css/aboutUs/about_glo.css"/>
-		
+		<link rel="stylesheet" type="text/css" href="../../css/usRelation/investor.css"/>
 	<script src="../../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 	
 	</head>
@@ -37,29 +30,55 @@
 		<img src="../../img/n_navbg.png" class="nav_bg"/>
 		<div>
 				
-				<h2>关于我们</h2>
-				<p><a href="#">首页</a>><span><a href="#">关于我们</a></span></p>
+				<h2>投资者关系</h2>
+				<p><a href="#">首页</a>><span><a href="#">投资者关系</a></span></p>
 			</div>
 		</div>
 		
 		
-		
-		
-		
-		<div class="abou_con">
-			<div class="navbar">
-				<ul>
-					<li><a href="#">公司介绍</a></li>
-					<li id="a2"><a href="#">组织架构</a></li>
-					<li><a href="#">管理团队</a></li>
-					<li><a href="#">荣誉奖项</a></li>
-					<li><a href="#">投资亮点</a></li>
-					<li><a href="#">公司资料</a></li>
-				</ul>
-				<img src="../../img/aboutus/bottom_bg.jpg" class="bottom_bg"/>
-			</div>
+		<div class="rea_con">
+			<div class="re_navbar">
 				
+				<span class="con_le"></span>
+				<div class="re_cen">
+					<ul>
+						<li><a href="#">公司资料</a></li>
+						<li><a href="#">企业管治</a></li>
+						<li><a href="#">财务报告</a></li>
+						<li><a href="#" id="gong">公告及通函</a></li>
+						<li><a href="#">股价资料</a></li>
+						<li><a href="#">分析师名单</a></li>
+						<li><a href="#">股东服务</a></li>
+						<li><a href="">投资者常见问题</a></li>
+						<li><a href="">投资者关系日历</a></li>
+						<li><a href="">投资者关系联系资料</a></li>
+						<li><a href="">电邮通知</a></li>
+
+
+					</ul>
+				</div>
+				<span class="con_ri"></span>
+				<img src="../../img/aboutus/bottom_bg.jpg" id="bar_bg"/>
 			</div>
+			
+			
+			
+		</div>
+		<div class="rela_arti">
+			<div  class="sele">
+				<div><p id="reti_1">2017</p><ul id="ryear">
+					
+				</ul></div><span></span>
+			</div>
+			
+			<div class="re_table">
+			
+			</div>
+			
+		</div>
+		<div id="btn_mor">
+			加载更多
+		</div>
 		
 		
 		
@@ -192,5 +211,71 @@
 		
 	</body>
 	
-
+<script src="../../js/usRelation/investor.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var str="";
+	 var theyear=2017; 
+	$.ajax({
+		type:"get",
+		url:"../../admin/relation/dealphp/relation/relation.php",
+		async:true,
+		beforeSend:function(){
+			$("#btn_mor").html("加载中...");
+		},
+	    success:function(data){
+	    	$("#btn_mor").html("加载更多");
+	    	var data=JSON.parse(data);
+	    	 data=data.data;
+		if(data.length<10){
+	    	 	$("#btn_mor").css("display","none");
+	    	 }else{
+	    	 	$("#btn_mor").css("display","block");
+	    	 }
+		for(var i=0;i<data.length;i++){
+			data[i].rshijian=data[i].rshijian.substr(0,10);
+			str+="<dd onclick=locati('"+data[i].rpath+"')><i><img src='../../img/usRelation/re_item1.png'/></i><p>"+data[i].rtitle+"</p><span>"+data[i].rshijian+"</span></dd>"
+		}
+		$(".re_table").html(str);
+	    }
+	});
+//	$.getJSON("../../admin/relation/dealphp/relation/relation.php",function(data){
+//		
+//		
+//	});
+function locati(url){
+	location.href="/Anews/admin/relation"+url;
+}
+$(".re_table").on("mouseover","dd",function(){
+	$(this).find("p").css("color","#E5674E");
+	$(this).find("span").css("color","#E5674E");
+})
+$(".re_table").on("mouseout","dd",function(){
+	$(this).find("p").css("color","#000");
+	$(this).find("span").css("color","#000");
+})
+	
+	var btnmo=0;
+	$("#btn_mor").click(function(){
+		btnmo++;
+		
+		$.get("../../admin/relation/dealphp/relation/relation.php",{zhi:btnmo,year:theyear},function(data){
+			var data=JSON.parse(data);
+	    	 data=data.data;
+	    	 if(data.length<10){
+	    	 	$("#btn_mor").css("display","none");
+	    	 }else{
+	    	 	$("#btn_mor").css("display","block");
+	    	 }
+			for(var i=0;i<data.length;i++){
+			data[i].rshijian=data[i].rshijian.substr(0,10);
+			str+="<dd onclick=locati('"+data[i].rpath+"')><i><img src='../../img/usRelation/re_item1.png'/></i><p>"+data[i].rtitle+"</p><span>"+data[i].rshijian+"</span></dd>"
+		}
+		$(".re_table").html(str);
+		
+		});
+		
+	});
+	
+	
+</script>
 </html>

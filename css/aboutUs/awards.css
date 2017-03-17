@@ -1,0 +1,125 @@
+/*荣誉奖项*/
+.scrool{
+	width: 900px;
+	margin: 0 auto;
+}
+.aw_line{
+	border-top:1px dashed #CCCCCC;
+	width: 100%;
+	padding-bottom: 60px;
+}
+.awsc_con span{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	color: #e3e3e3;
+	margin-left: 100px;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+}
+.awsc_con span i{
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background: #e3e3e3;
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -4px;
+}
+.awsc_con .aw_a1{
+	color: #E5674E;
+}
+.awsc_con .aw_a1 i{
+	background: #E5674E;
+}
+/*轮播图*/
+.awsc_carous{
+	width: 1128px;
+	margin: 0 auto;
+   height: 376px;
+   
+}
+
+   
+    .swiper-container {
+        width: 100%;
+        height: 354px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+     
+        position: relative;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .append-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .append-buttons a{
+        display: inline-block;
+        border: 1px solid #007aff;
+        color: #007aff;
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 0 10px;
+        font-size: 13px;
+    }
+    .swiper-slide .car_bg{
+    	position: absolute;
+    	
+    	height: 320px;
+    	width: 320px;
+    	
+    }
+.swiper-slide .car_bg img{
+	position: absolute;
+	left: 0;
+	z-index: 0;
+	height: 320px;
+	width: 320px;
+}
+
+.swiper-slide .car_move{
+	position: absolute;
+	background:rgba(0,0,0,0.5);
+	width: 320px;
+	height: 320px;
+	z-index: 1;
+
+display: none;
+	font-size: 13px;
+}
+
+.varmo_1{
+	position: absolute;
+	left: 20px;
+	color: #FFFFFF;
+	bottom: 30px;
+	width: 320px;
+	text-align: left;
+}
+.varmo_1 span{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	color: #FFFFFF;
+	margin-left: -5px;
+background: url(../../img/aboutus/info/aw_dou.png) no-repeat center center;
+}
