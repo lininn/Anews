@@ -18,3 +18,23 @@ $(".con_le").click(function(){
 
 
 
+
+/*dianji*/
+
+
+
+$(".qu_art").click(function(){
+	
+	
+	if($(this).find(".qu_req").is(":hidden")){
+		$(this).parent(".qu_q").css("color","#E5674E");
+		$(this).find(".qu_ite2").css("background","url(../../img/usRelation/que_ico3.png) no-repeat center center");
+	$(this).find(".qu_req").slideDown();
+	}else{
+		$(this).find(".qu_ite2").css("background","url(../../img/usRelation/que_ico4.png) no-repeat center center");
+	$(this).find(".qu_req").slideUp();
+	$(this).find(".qu_q").css("color","#333");
+	}
+	
+	
+});

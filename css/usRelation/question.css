@@ -101,4 +101,65 @@ cursor: pointer;
 /*question*/
 .qu_con{
 	width: 1100px;
+	margin:0 auto;
+	margin-bottom: 50px;
+}
+.qu_art{
+	width: 1100px;
+	position: relative;
+	margin-bottom: 25px;
+	
+}
+.qu_q{
+	height: 30px;
+	width: 1100px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 28px;
+}
+.qu_q:hover{
+color: #E5674E;
+cursor: pointer;	
+}
+
+.qu_q .qu_ite1{
+	display: inline-block;
+	float: left;
+	height:28px;
+	width: 28px;
+	margin-right: 30px;
+}
+.qu_q .qu_ite1 img{
+	height: 28px;
+	width: 28px;
+}
+.qu_ite2{
+	display: inline-block;
+	float: right;
+	height:30px;
+	width: 30px;
+	
+	background: url(../../img/usRelation/que_ico4.png) no-repeat center center;
+}
+.qu_req{
+	line-height: 30px;
+	width: 712px;
+	background: #f5f5f5;
+	display: none;
+}
+.qu_req{
+	padding-top: 30px;
+	padding-bottom: 40px;
+padding-left: 30px;
+padding-right: 30px;
+margin-top: 15px;
+}
+.qu_req .qu_it3{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	position: relative;
+	top: 5px;
+	
+	margin-right: 33px;
 }
