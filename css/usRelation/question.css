@@ -1,0 +1,104 @@
+.rea_con{
+width: 1200px;
+margin: 0 auto;	
+position: relative;
+margin-bottom: 20px;
+top: -30px;
+overflow: hidden;
+}
+.re_navbar{
+	width: 1200px;
+	height: 60px;
+	background: #f5f5f5;
+	box-shadow: 5px 0px 20px #d4d4d4,-5px 0px 20px #d4d4d4;
+border-radius: 8px;
+}
+
+.re_cen{
+	width: 1100px;
+	height: 22px;
+
+	position: absolute;
+	left: 50px;
+	overflow: hidden;
+	top: 20px;
+}
+.re_cen ul{
+	width: 1755px;
+	position: absolute;
+	
+}
+.re_cen ul li{
+	float: left;
+	width: 156px;
+	height: 23px;
+	line-height: 22px;
+	text-align: center;
+	border-left: 1px solid #e6735e;
+	
+}
+.re_cen ul li:first-child{
+	border-left: none;
+}
+
+
+.re_cen ul li a{
+	font-size: 15px;
+	font-family: "微软雅黑";
+color: #000;
+}
+
+.re_cen ul li a:hover{
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color:#E5674E;
+	display: inline-block;
+	height: 20px;
+	border-bottom: 3px solid #E5674E;
+}
+
+
+.con_le{
+	cursor: pointer;
+	position: absolute;
+	display:block;
+	left: 15px;
+	top: 22px;
+	height: 20px;
+	width: 20px;
+	background: url(../../img/usRelation/reti_l1.png) no-repeat center center;
+}
+.con_ri{
+position: absolute;
+	display:block;
+	right: 15px;
+	top: 22px;
+	height: 20px;
+	width: 20px;
+	background: url(../../img/usRelation/reti_l2.png) no-repeat center center;	
+cursor: pointer;
+}
+
+#gong{
+	
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color:#E5674E;
+	display: inline-block;
+	height: 20px;
+	border-bottom: 3px solid #E5674E;
+}
+#bar_bg{
+	height: 40px;
+	width: 700px;
+	position: absolute;
+	left: 250px;
+	top: 358px;
+	left: 50%;
+	margin-left: -350px;
+	z-index: 9999;
+}
+/*question*/
+.qu_con{
+	width: 1100px;
+}

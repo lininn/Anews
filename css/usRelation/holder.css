@@ -1,0 +1,181 @@
+.rea_con{
+width: 1200px;
+margin: 0 auto;	
+position: relative;
+margin-bottom: 20px;
+top: -30px;
+overflow: hidden;
+}
+.re_navbar{
+	width: 1200px;
+	height: 60px;
+	background: #f5f5f5;
+	box-shadow: 5px 0px 20px #d4d4d4,-5px 0px 20px #d4d4d4;
+border-radius: 8px;
+}
+
+.re_cen{
+	width: 1100px;
+	height: 22px;
+
+	position: absolute;
+	left: 50px;
+	overflow: hidden;
+	top: 20px;
+}
+.re_cen ul{
+	width: 1755px;
+	position: absolute;
+	left: -790px;
+}
+.re_cen ul li{
+	float: left;
+	width: 156px;
+	height: 23px;
+	line-height: 22px;
+	text-align: center;
+	border-left: 1px solid #e6735e;
+	
+}
+.re_cen ul li:first-child{
+	border-left: none;
+}
+
+
+.re_cen ul li a{
+	font-size: 15px;
+	font-family: "微软雅黑";
+color: #000;
+}
+
+.re_cen ul li a:hover{
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color:#E5674E;
+	display: inline-block;
+	height: 20px;
+	border-bottom: 3px solid #E5674E;
+}
+
+
+.con_le{
+	cursor: pointer;
+	position: absolute;
+	display:block;
+	left: 15px;
+	top: 22px;
+	height: 20px;
+	width: 20px;
+	background: url(../../img/usRelation/reti_l1.png) no-repeat center center;
+}
+.con_ri{
+position: absolute;
+	display:block;
+	right: 15px;
+	top: 22px;
+	height: 20px;
+	width: 20px;
+	background: url(../../img/usRelation/reti_l2.png) no-repeat center center;	
+cursor: pointer;
+}
+
+#gong{
+	
+	font-weight: bold;
+	font-family: "微软雅黑";
+	color:#E5674E;
+	display: inline-block;
+	height: 20px;
+	border-bottom: 3px solid #E5674E;
+}
+#bar_bg{
+	height: 40px;
+	width: 700px;
+	position: absolute;
+	left: 250px;
+	top: 358px;
+	left: 50%;
+	margin-left: -350px;
+	z-index: 9999;
+}
+/*container*/
+.hol_con{
+	width: 1100px;
+	margin: 0 auto;
+	margin-top: 40px;
+	overflow: hidden;
+}
+.hol_con h2{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	padding-bottom: 26px;
+}
+.hol_tel{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #333333;
+width:1100px;
+height: 32px;
+margin-bottom: 30px;
+}
+.tel_l{
+width: 320px;
+	float: left;
+height: 30px;
+
+}
+.hol_tel .tel_l i{
+	display: inline-block;
+	
+	width: 22px;
+	position: relative;
+	top: 5px;
+	margin-right: 20px;
+}
+.hol_tel .tel_l i img{
+	height: 22px;
+	width: 22px;
+	
+}
+/*划线*/
+.hr1{
+	width: 1100px;
+	height: 0px;
+	border-top:1px dashed #c4c4c4;
+}
+.hol_t1{
+	padding-top: 34px;
+}
+.hol_tab{
+	width: 1090px;
+	margin: 0 auto;
+	border: 1px solid #DBDADA;
+overflow: hidden;
+margin-bottom: 122px;
+border-bottom: none;
+}
+
+.hol_head dd{
+height: 58px;
+width: 218px;
+background: #E5674E;
+float: left;
+line-height: 58px;
+text-align: center;
+color: #FFFFFF;
+font-family: "微软雅黑";
+font-size: 16px;
+
+}
+.hol_tx1 dd{
+	float: left;
+	height: 60px;
+	width: 218px;
+	border-bottom: 1px solid #DBDADA;
+	
+	text-align: center;
+	line-height: 60px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #333333;
+}
