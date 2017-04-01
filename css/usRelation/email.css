@@ -28,6 +28,7 @@ border-radius: 8px;
 .re_cen ul{
 	width: 1755px;
 	position: absolute;
+	left: -790px;
 }
 .re_cen ul li{
 	float: left;

@@ -169,9 +169,14 @@ border-left: none;
 
 .footer{
 width: 100%;
-background: url(../../img/footer_bg.png) no-repeat center center;
+/*background: url(../../img/footer_bg.png) no-repeat center center;*/
+background: url(../../img/foot_bgx.jpg) no-repeat center center;
 background-size: 100% 100%;
-height: 600px;
+/*height: 600px;*/
+height: 391px;
+position: relative;
+overflow: hidden;
+
 }
 .footer .foo_con{
 width: 1200px;
@@ -183,17 +188,17 @@ height: 400px;
 .foo_l{
 width: 860px;
 float: left;
-height: 500px;
-
+height: 235px;
+overflow: hidden;
 margin-top: 30px;
 }
 .foo_l .aul{
-width: 150px;
+width: 185px;
 float: left;
 margin-left: 27px;
 }
 .foo_l .aul:first-child{
-margin-left: 0;
+margin-left: 20px;
 }
 .foo_l .aul li{
 margin-top: 15px;
@@ -236,7 +241,7 @@ margin-left: 20px;
 .foo_sec{
 clear: both;
 height: 100px;
-padding-top: 70px;
+padding-top: 40px;
 }
 
 .foo_sec  img{
@@ -256,6 +261,33 @@ border: solid 1px;
 .foo_sec div p{
 font-size: 12px;
 color: #fff;
+}
+.banquan{
+	position: absolute;
+	width: 1200px;
+	left: 50%;
+	margin-left: -600px;
+	color: #a1a1a1;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	bottom:10px;
+
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #969595;
+}
+.adddown{
+	position: absolute;
+	width: 21px;
+	height: 20px;
+	left: 50%;
+	border: 20px;
+	bottom:80px;
+	cursor: pointer;
+}
+.adddown img{
+	width: 21px;
+	height: 20px;
 }
 
 /*分页*/

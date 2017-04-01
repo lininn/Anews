@@ -1,66 +1,4 @@
-/*header*/
-.bod_con{
-height: 90px;
-width: 100%;
-background: #fff;
-}
-.n_header{
-width: 1200px;
-margin: 0 auto;
-height: 90px;
-position:relative;
 
-}
-.logo{
-position: absolute;
-
-left: 0;
-top: 28px;
-}
-.ne_nav{
-height: 50px;
-position: absolute;
-top: 41px;
-left: 370px;
-
-}
-.ne_nav li{
-float: left;
-padding-left: 10px;
-padding-right: 10px;
-margin-left: 35px;
-
-
-line-height:50px;
-cursor: pointer;
-}
-.ne_nav li a{
-color: #000;
-font-family: "微软雅黑";
-
-}
-.ne_nav li a:hover{
-	color: #E5674E;
-	
-}
-#a1{
-background: url(../../img/nav_txtbg.png) no-repeat center bottom;
-background-size: 100% 10px;
-}
-#a1 a{
-color: #e6735e;
-}
-.ne_nav li:hover{
-background: url(../../img/nav_txtbg.png) no-repeat center bottom;
-background-size: 100% 10px;
-
-}
-.search{
-position: absolute;
-right: 0;
-top:50px;
-
-}
 
 /*news center*/
 .newscenter{
@@ -87,16 +25,44 @@ left: 50%;
 margin-left: -160px;
 top: 60px;
 }
-.newscenter div h2{
+.newscenter div .txt1{
+	display: inline-block;
+padding-bottom: 15px;
+
+
 font-size: 30px;
 font-family: "微软雅黑";
 font-weight: bold;
 color: #fff;
-padding-left: 25px;
-padding-right: 25px;
-background: url(../../img/h2_l.png)no-repeat center left,url(../../img/h2_r.png)no-repeat center right;
+
+position: relative;
 
 }
+.newscenter div label{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background:#c5c2c3;
+	left: 50%;
+	margin-left: -40px;
+	width: 80px;
+	
+	
+
+}
+.newscenter div .txt1 span{
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 6px;
+	background: #E5674E;
+	bottom:-2px;
+	left: 50%;
+	margin-left: -15px;
+}
+
+
 .newscenter div p{
 margin-top: 20px;
 font-size: 16px;
@@ -124,96 +90,7 @@ font-size: 16px;
 
 
 
-.footer{
-width: 100%;
-background: url(../../img/footer_bg.png) no-repeat center center;
-background-size: 100% 100%;
-height: 600px;
-}
-.footer .foo_con{
-width: 1200px;
-margin:0 auto;
-height: 400px;
 
-
-}
-.foo_l{
-width: 860px;
-float: left;
-height: 500px;
-
-margin-top: 30px;
-}
-.foo_l .aul{
-width: 150px;
-float: left;
-margin-left: 27px;
-}
-.foo_l .aul:first-child{
-margin-left: 0;
-}
-.foo_l .aul li{
-margin-top: 15px;
-
-}
-.foo_l .aul li:first-child{
-text-align: center;
-background:#d3614a ;
-width: 120px;
-height: 30px;
-border-radius: 5px;
-line-height: 30px;
-margin-left: -15px;
-}
-.aul li a{
-font-size: 16px;
-color: #fff;
-}
-
-.foo_r{
-width: 250px;
-height: 500px;
-
-float:right;
-padding-top:45px;
-}
-.foo_r>div:first-child span{
-font-size: 16px;
-color: #fff;
-float: left;
-}
-.foo_r>div:first-child a{
-
-height: 35px;
-width: 35px;
-float: left;
-margin-left: 20px;
-}
-
-.foo_sec{
-clear: both;
-height: 100px;
-padding-top: 70px;
-}
-
-.foo_sec  img{
-height: 110px;
-width: 110px;
-
-}
-.foo_sec div{
-float: left;
-width: 110px;
-height: 110px;
-
-margin-left: 10px;
-text-align: center;
-border: solid 1px;
-}
-.foo_sec div p{
-font-size: 12px;
-color: #fff;
-}
 
 /*分页*/
 .fenye{
