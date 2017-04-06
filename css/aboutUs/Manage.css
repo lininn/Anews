@@ -38,6 +38,10 @@ overflow: hidden;
 	margin-bottom: 80px;
 	
 }
+.man_user {
+	width: 1200px;
+	margin: 0 auto;
+}
 .man_user .manu_item{
 cursor: pointer;
 width: 336px;

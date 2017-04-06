@@ -112,6 +112,7 @@ z-index: 999;
 	text-align: center;
 	border: 1px solid #e6e3e3;
 	border-top: none;
+	cursor: pointer;
 }
 .do_item  a{
 	line-height: 30px;

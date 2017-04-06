@@ -142,3 +142,49 @@ margin-top: 74px;
 margin-bottom: 100px;
 cursor: pointer;
 }
+.country{
+	width: 1130px;
+	margin: 0 auto;
+	height: 80px;
+	border-bottom: 1px dashed #bbbbbb;
+	margin-bottom: 40px;
+}
+.country dd{
+	position:relative;
+	top: 30px;
+	float: left;
+	width: 120px;
+	height: 50px;
+	margin-left: 50px;
+	text-align: center;
+	color: #c3c3c3;
+	cursor: pointer;
+}
+.country dd h3{
+	font-size: 16px;
+	font-family: "微软雅黑";
+font-weight: normal;
+}
+
+.country dd:hover{
+	color: #E5674E;
+}
+.country dd:hover .cn_d1{
+	background: #E5674E;
+}
+.cn_d1{
+	position: absolute;
+	display: inline-block;
+	background: #e3e3e3;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	bottom: -4px;
+}
+
+#cnt2{
+	color: #E5674E;
+}
+#cnt2 span{
+	background: #E5674E;
+}

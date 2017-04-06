@@ -74,27 +74,8 @@ $("#cn_btn").click(function(){
 	 $(".cn_art").append(str);
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
+
 		
 		
 	}

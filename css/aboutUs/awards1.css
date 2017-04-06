@@ -1,0 +1,94 @@
+/*荣誉奖项*/
+.scrool{
+	width: 1200px;
+	margin: 0 auto;
+}
+.aw_line{
+	border-top:1px dashed #CCCCCC;
+	width: 100%;
+	padding-bottom: 60px;
+}
+.awsc_con span{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	color: #e3e3e3;
+	margin-left: 100px;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+	cursor: pointer;
+}
+
+.awsc_con span i{
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background: #e3e3e3;
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -4px;
+}
+.awsc_con .aw_a1{
+	color: #E5674E;
+}
+.awsc_con .aw_a1 i{
+	background: #E5674E;
+}
+
+/*轮播图*/
+.poster-main{
+	width: 1000px;
+	height: 500px;
+	position: relative;
+	margin: 30px auto;
+}
+.poster-main a,.poster-main img{
+	display:block;
+}
+.poster-main .poster-list{
+	width: 1000px;
+	height: 500px;
+}
+.poster-main .poster-list .poster-item{ 
+	width: 200px;
+	height: 500px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.poster-item .aw_tx1{
+	display: inline-block;
+	position: absolute;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	height: 55px;
+  bottom: 0;
+  background: #8b8b8b;
+  color: #FFFFFF;
+  line-height: 55px;
+	
+}
+.poster-main .poster-btn{ 
+	position:absolute;
+	top:0;
+	z-index:10; 
+	cursor:pointer;  
+}
+.poster-main .poster-prev-btn{
+	left:-100px; 
+	background: url(../../img/aboutus/awards/left.png) no-repeat center center;
+}
+.poster-main .poster-next-btn{
+	right:-100px; 
+	background: url(../../img/aboutus/awards/right.png) no-repeat center center;
+}
+
+.aw_dou{
+	position: absolute;
+	top: -2px;
+	left: 0px;
+}

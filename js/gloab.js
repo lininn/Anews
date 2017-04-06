@@ -92,6 +92,7 @@ if(shan){
 	
 	$(".do_item li").click(function(){
 		$(".i_list h2").html($(this).html());
+		$(".do_item").slideUp();
 	})
 	
 	
